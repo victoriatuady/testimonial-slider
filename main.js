@@ -11,13 +11,13 @@ const testimonials = [
     name: "Tanya Sinclair",
     image: "img/image-tanya.jpg",
     position: "UX Engineer",
-    text: "I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future.",
+    text: `" I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. " `,
   },
   {
     name: "John Tarkpor",
     image: "img/image-john.jpg",
     position: "Junior Front-end Developer",
-    text: "If you want to lay the best foundation possible I'd recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer.",
+    text: `" If you want to lay the best foundation possible I'd recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. " `,
   },
 ];
 
@@ -37,7 +37,7 @@ function updateTestimonial() {
 //Function to handle the previous button click
 function prevBtn() {
   currentIndex--;
-  if (currentIndex < 0) {
+  if (currentIndex <= 0) {
     currentIndex = 0;
   }
   updateTestimonial();
@@ -47,7 +47,7 @@ function prevBtn() {
 function nextBtn() {
   currentIndex++;
   if (currentIndex >= testimonials.length) {
-    currentIndex = 0;
+    currentIndex = testimonials.length;
   }
   updateTestimonial();
 }
