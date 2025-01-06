@@ -129,7 +129,7 @@ span {
     grid-template-columns: 1fr 1fr;
     place-content: center;
     text-align: left;
-    margin: 3rem 3rem 2rem 4rem;
+    margin: 3rem 4rem 2rem 4rem;
   }
 
   .container1 {
@@ -169,7 +169,7 @@ span {
   }
 
   .main {
-    margin: 3rem 3rem 3rem 7rem;
+    margin: 3rem 6rem 3rem 7rem;
   }
 
   span {
@@ -187,6 +187,10 @@ span {
 }
 
 @media screen and (min-width: 1440px) {
+  .main {
+    margin: 3rem 7rem 2rem 4rem;
+  }
+
   #paragraph {
     font-size: 32px;
     line-height: 2.5rem;
@@ -205,7 +209,7 @@ span {
   }
 
   .testimonial-text {
-    left: 130px;
+    left: 120px;
     gap: 2rem;
   }
 }
