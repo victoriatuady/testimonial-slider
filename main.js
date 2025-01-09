@@ -47,7 +47,7 @@ function prevBtn() {
 function nextBtn() {
   currentIndex++;
   if (currentIndex >= testimonials.length) {
-    currentIndex = testimonials.length;
+    currentIndex = 0;
   }
   updateTestimonial();
 }
